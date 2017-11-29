@@ -1,0 +1,2 @@
+Supporting Multiple Screens
+https://developer.android.com/guide/practices/screens_support.html
