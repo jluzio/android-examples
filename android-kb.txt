@@ -1,2 +1,7 @@
 Supporting Multiple Screens
 https://developer.android.com/guide/practices/screens_support.html
+
+Gradle Proxy:
+gradle.properties
+Workaround for issues with Android Studio/Gradle not handling well restrictive proxies: try to use a network without proxy
+TODO: check alternative methods
