@@ -5,3 +5,11 @@ Gradle Proxy:
 gradle.properties
 Workaround for issues with Android Studio/Gradle not handling well restrictive proxies: try to use a network without proxy
 TODO: check alternative methods
+
+https://developer.android.com/topic/libraries/architecture/guide.html
+https://developer.android.com/guide/components/fragments.html
+https://source.android.com/setup/code-style
+https://developer.android.com/studio/write/java8-support.html
+
+Resource  (R)
+- Id for views is local to the layout
