@@ -22,7 +22,8 @@
         <activity android:name=".SampleActivity" />
         <activity android:name=".SampleByScreenSizeActivity" />
         <activity android:name=".Challenge20171127x01Activity" />
-        <activity android:name=".Challenge20171128x01Activity"></activity>
+        <activity android:name=".Challenge20171128x01Activity" />
+        <activity android:name=".ButtonCounterChallengeActivity"></activity>
     </application>
 
 </manifest>

@@ -131,6 +131,8 @@ public class MainActivity extends AppCompatActivity
             activityClass = Challenge20171127x01Activity.class;
         } else if (id == R.id.nav_challenge20171128x01) {
             activityClass = Challenge20171128x01Activity.class;
+        } else if (id == R.id.nav_buttonCounterChallenge) {
+            activityClass = ButtonCounterChallengeActivity.class;
         }
         return activityClass;
     }
@@ -145,6 +147,8 @@ public class MainActivity extends AppCompatActivity
             layout = R.layout.activity_challenge20171127x01;
         } else if (id == R.id.nav_challenge20171128x01) {
             layout = R.layout.activity_challenge20171128x01;
+        } else if (id == R.id.nav_buttonCounterChallenge) {
+            layout = R.layout.activity_button_counter_challenge;
         }
         return layout;
     }

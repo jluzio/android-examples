@@ -20,6 +20,10 @@
             android:id="@+id/nav_challenge20171128x01"
             android:icon="@drawable/ic_menu_manage"
             android:title="Challenge 20171128x01" />
+        <item
+            android:id="@+id/nav_buttonCounterChallenge"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Button Counter Challenge" />
     </group>
 
     <item android:title="Other">
