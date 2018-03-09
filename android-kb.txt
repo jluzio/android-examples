@@ -13,3 +13,8 @@ https://developer.android.com/studio/write/java8-support.html
 
 Resource  (R)
 - Id for views is local to the layout
+
+Save/Restore State:
+ - onSaveInstanceState/onRestoreInstanceState: recommended in documentation
+ - onPause/onResume: recommended in course. for persistent storage? maybe works in more scenarios (investigate)
+ 
