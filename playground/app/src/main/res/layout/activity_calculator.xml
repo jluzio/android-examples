@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.jluzio.playground.CalculatorActivity">
+
+    <EditText
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="numberSigned|numberDecimal"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="-Result-" />
+
+    <TextView
+        android:id="@+id/textOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textInput"
+        app:layout_constraintEnd_toStartOf="@+id/textInput"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="-Op-" />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResult"
+        tools:text="-Input-" />
+
+    <Button
+        android:id="@+id/button_n0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minWidth="48dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/button_n1"
+        app:layout_constraintTop_toBottomOf="@+id/button_n2" />
+
+    <Button
+        android:id="@+id/button_n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minWidth="48dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="@+id/button_n4"
+        app:layout_constraintTop_toBottomOf="@+id/button_n4" />
+
+    <Button
+        android:id="@+id/button_n2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n1"
+        app:layout_constraintStart_toEndOf="@+id/button_n1" />
+
+    <Button
+        android:id="@+id/button_n3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n2"
+        app:layout_constraintStart_toEndOf="@+id/button_n2" />
+
+    <Button
+        android:id="@+id/button_n4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minWidth="48dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="@+id/button_n7"
+        app:layout_constraintTop_toBottomOf="@+id/button_n7" />
+
+    <Button
+        android:id="@+id/button_n5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n4"
+        app:layout_constraintStart_toEndOf="@+id/button_n4" />
+
+    <Button
+        android:id="@+id/button_n6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n5"
+        app:layout_constraintStart_toEndOf="@+id/button_n5" />
+
+    <Button
+        android:id="@+id/button_n7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minWidth="48dp"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="@+id/textInput"
+        app:layout_constraintTop_toBottomOf="@+id/textInput" />
+
+    <Button
+        android:id="@+id/button_n8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n7"
+        app:layout_constraintStart_toEndOf="@+id/button_n7" />
+
+    <Button
+        android:id="@+id/button_n9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n8"
+        app:layout_constraintStart_toEndOf="@+id/button_n8" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonEquals"
+        app:layout_constraintStart_toEndOf="@+id/buttonEquals" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n3"
+        app:layout_constraintStart_toEndOf="@+id/button_n3" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="*"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n6"
+        app:layout_constraintStart_toEndOf="@+id/button_n6" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="/"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n9"
+        app:layout_constraintStart_toEndOf="@+id/button_n9" />
+
+    <Button
+        android:id="@+id/buttonDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="."
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n0"
+        app:layout_constraintStart_toEndOf="@+id/button_n0" />
+
+    <Button
+        android:id="@+id/buttonEquals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:minWidth="48dp"
+        android:text="="
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonDot"
+        app:layout_constraintStart_toEndOf="@+id/buttonDot" />
+
+</android.support.constraint.ConstraintLayout>
