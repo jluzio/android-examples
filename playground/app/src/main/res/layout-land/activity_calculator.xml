@@ -11,15 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
         android:focusable="false"
-        android:inputType="numberSigned|numberDecimal"
         android:focusableInTouchMode="false"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:text="-Result-" />
 
     <TextView
@@ -30,8 +27,8 @@
         android:layout_marginStart="8dp"
         android:minWidth="48dp"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textInput"
-        app:layout_constraintEnd_toStartOf="@+id/textInput"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_n7"
+        app:layout_constraintEnd_toStartOf="@+id/button_n7"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="-Op-" />
 
@@ -44,9 +41,9 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textResult"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResult"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="-Input-" />
 
     <Button
