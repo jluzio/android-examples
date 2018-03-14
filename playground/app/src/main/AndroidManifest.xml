@@ -26,6 +26,9 @@
         <activity android:name=".ui.course.ButtonCounterChallengeActivity" />
         <activity android:name=".ui.course.CalculatorActivity" />
         <activity android:name=".ui.samples.ArchComponentsActivity"></activity>
+        
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

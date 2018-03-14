@@ -19,6 +19,7 @@ import org.example.jluzio.playground.ui.course.ButtonCounterChallengeActivity;
 import org.example.jluzio.playground.ui.course.CalculatorActivity;
 import org.example.jluzio.playground.ui.course.Challenge20171127x01Activity;
 import org.example.jluzio.playground.ui.course.Challenge20171128x01Activity;
+import org.example.jluzio.playground.ui.samples.ArchComponentsActivity;
 import org.example.jluzio.playground.ui.samples.SampleActivity;
 import org.example.jluzio.playground.ui.samples.SampleByScreenSizeActivity;
 
@@ -122,6 +123,8 @@ public class MainActivity extends AppCompatActivity
             activityClass = ButtonCounterChallengeActivity.class;
         } else if (id == R.id.nav_calculator) {
             activityClass = CalculatorActivity.class;
+        } else if (id == R.id.nav_arch_components) {
+            activityClass = ArchComponentsActivity.class;
         }
         return activityClass;
     }

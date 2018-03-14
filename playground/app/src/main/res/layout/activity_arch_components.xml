@@ -6,4 +6,118 @@
     android:layout_height="match_parent"
     tools:context="org.example.jluzio.playground.ui.samples.ArchComponentsActivity">
 
+    <TextView
+        android:id="@+id/userIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:minWidth="64dp"
+        android:text="Id:"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:minWidth="64dp"
+        android:text="-Id-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/userIdLabel"
+        app:layout_constraintStart_toEndOf="@+id/userIdLabel" />
+
+    <TextView
+        android:id="@+id/userNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:minWidth="64dp"
+        android:text="Name:"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="@+id/userIdLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userIdLabel" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="64dp"
+        android:text="-Name-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/userNameLabel"
+        app:layout_constraintStart_toStartOf="@+id/userId" />
+
+    <TextView
+        android:id="@+id/userUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:minWidth="64dp"
+        android:text="Username:"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="@+id/userNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
+
+    <TextView
+        android:id="@+id/userUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="64dp"
+        android:text="-Username-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/userUsernameLabel"
+        app:layout_constraintStart_toStartOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/userEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:minWidth="64dp"
+        android:text="Email:"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="@+id/userUsernameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userUsernameLabel" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="64dp"
+        android:text="-Email-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/userEmailLabel"
+        app:layout_constraintStart_toStartOf="@+id/userUsername" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:minWidth="64dp"
+        android:text="Status:"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="@+id/userEmailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailLabel" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="64dp"
+        android:text="---"
+        app:layout_constraintBaseline_toBaselineOf="@+id/statusLabel"
+        app:layout_constraintStart_toStartOf="@+id/userEmail" />
+
+    <Button
+        android:id="@+id/getDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Get Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

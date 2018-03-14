@@ -28,6 +28,10 @@
             android:id="@+id/nav_calculator"
             android:icon="@drawable/ic_menu_manage"
             android:title="Calculator" />
+        <item
+            android:id="@+id/nav_arch_components"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Arch Components" />
     </group>
 
     <item android:title="Other">
