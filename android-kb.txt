@@ -18,3 +18,13 @@ Save/Restore State:
  - onSaveInstanceState/onRestoreInstanceState: recommended in documentation
  - onPause/onResume: recommended in course. for persistent storage? maybe works in more scenarios (investigate)
  
+--- Libraries ---
+- Dagger (CDI)
+https://google.github.io/dagger
+https://google.github.io/dagger/android
+
+- Android architecture components
+ - LiveData (Data observers)
+ - Room (Database)
+ - ViewModel
+https://developer.android.com/topic/libraries/architecture/adding-components.html
