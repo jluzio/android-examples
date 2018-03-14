@@ -85,5 +85,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:2.3.0"
     // converters (optional)
     implementation "com.squareup.retrofit2:converter-gson:2.3.0"
+    // converter-gson uses gson 2.7.0 (maybe use other version?)
+    //implementation 'com.google.code.gson:gson:2.8.2'
 
 }
