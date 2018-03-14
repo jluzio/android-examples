@@ -59,7 +59,6 @@ dependencies {
     // Test helpers for Room
     //testImplementation "android.arch.persistence.room:testing:1.0.0"
 
-
     // Java8 support for Lifecycles
     implementation "android.arch.lifecycle:common-java8:1.1.0"
 
@@ -90,7 +89,8 @@ dependencies {
 
     // Dependency Injection: Dagger
     implementation "com.google.dagger:dagger-android:2.15"
-    implementation "com.google.dagger:dagger-android-support:2.15" // if you use the support libraries
+    // dagger-android-support: if you use the support libraries
+    implementation "com.google.dagger:dagger-android-support:2.15"
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.15'
 
 }
