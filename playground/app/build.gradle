@@ -81,11 +81,16 @@ dependencies {
     // added to avoid conflicts
     implementation 'com.google.code.findbugs:jsr305:2.0.1'
 
-    // Rest
+    // Rest: Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.3.0"
     // converters (optional)
     implementation "com.squareup.retrofit2:converter-gson:2.3.0"
     // converter-gson uses gson 2.7.0 (maybe use other version?)
     //implementation 'com.google.code.gson:gson:2.8.2'
+
+    // Dependency Injection: Dagger
+    implementation "com.google.dagger:dagger-android:2.15"
+    implementation "com.google.dagger:dagger-android-support:2.15" // if you use the support libraries
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.15'
 
 }
