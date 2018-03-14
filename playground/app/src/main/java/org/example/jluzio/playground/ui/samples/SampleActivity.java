@@ -1,13 +1,15 @@
-package org.example.jluzio.playground;
+package org.example.jluzio.playground.ui.samples;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Challenge20171127x01Activity extends AppCompatActivity {
+import org.example.jluzio.playground.R;
+
+public class SampleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_challenge20171127x01);
+        setContentView(R.layout.activity_sample);
     }
 }

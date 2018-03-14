@@ -1,4 +1,4 @@
-package org.example.jluzio.playground;
+package org.example.jluzio.playground.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import org.example.jluzio.playground.R;
+import org.example.jluzio.playground.ui.course.ButtonCounterChallengeActivity;
+import org.example.jluzio.playground.ui.course.CalculatorActivity;
+import org.example.jluzio.playground.ui.course.Challenge20171127x01Activity;
+import org.example.jluzio.playground.ui.course.Challenge20171128x01Activity;
+import org.example.jluzio.playground.ui.samples.SampleActivity;
+import org.example.jluzio.playground.ui.samples.SampleByScreenSizeActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

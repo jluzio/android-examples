@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,12 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SampleActivity" />
-        <activity android:name=".SampleByScreenSizeActivity" />
-        <activity android:name=".Challenge20171127x01Activity" />
-        <activity android:name=".Challenge20171128x01Activity" />
-        <activity android:name=".ButtonCounterChallengeActivity" />
-        <activity android:name=".CalculatorActivity"></activity>
+        <activity android:name=".ui.samples.SampleActivity" />
+        <activity android:name=".ui.samples.SampleByScreenSizeActivity" />
+        <activity android:name=".ui.course.Challenge20171127x01Activity" />
+        <activity android:name=".ui.course.Challenge20171128x01Activity" />
+        <activity android:name=".ui.course.ButtonCounterChallengeActivity" />
+        <activity android:name=".ui.course.CalculatorActivity" />
+        <activity android:name=".ui.samples.ArchComponentsActivity"></activity>
     </application>
 
 </manifest>

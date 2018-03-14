@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.example.jluzio.playground.CalculatorActivity">
+    tools:context="org.example.jluzio.playground.ui.course.CalculatorActivity">
 
     <EditText
         android:id="@+id/textResult"

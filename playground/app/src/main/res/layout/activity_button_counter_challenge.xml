@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.example.jluzio.playground.ButtonCounterChallengeActivity">
+    tools:context="org.example.jluzio.playground.ui.course.ButtonCounterChallengeActivity">
 
     <EditText
         android:id="@+id/inputText"

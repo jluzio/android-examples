@@ -1,7 +1,9 @@
-package org.example.jluzio.playground;
+package org.example.jluzio.playground.ui.course;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import org.example.jluzio.playground.R;
 
 public class CalculatorActivity extends AppCompatActivity {
 

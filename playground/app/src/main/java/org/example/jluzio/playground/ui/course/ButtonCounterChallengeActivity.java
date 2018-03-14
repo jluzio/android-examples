@@ -1,4 +1,4 @@
-package org.example.jluzio.playground;
+package org.example.jluzio.playground.ui.course;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.example.jluzio.playground.R;
 
 public class ButtonCounterChallengeActivity extends AppCompatActivity {
     interface SavedStateKey {
