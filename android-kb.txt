@@ -27,4 +27,5 @@ https://google.github.io/dagger/android
  - LiveData (Data observers)
  - Room (Database)
  - ViewModel
+https://developer.android.com/topic/libraries/architecture/index.html
 https://developer.android.com/topic/libraries/architecture/adding-components.html
