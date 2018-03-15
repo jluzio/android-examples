@@ -3,6 +3,7 @@ package org.example.jluzio.playground.ui.samples;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -11,44 +12,63 @@ import org.example.jluzio.playground.data.remote.ServiceFactory;
 import org.example.jluzio.playground.data.remote.UserService;
 import org.example.jluzio.playground.data.remote.response.User;
 import org.example.jluzio.playground.data.viewModel.UserViewModel;
+import org.example.jluzio.playground.injection.AppId;
 
+import javax.inject.Inject;
+
+import dagger.android.AndroidInjection;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ArchComponentsActivity extends AppCompatActivity {
+    private static final String TAG = "ArchComponentsActivity";
+
     private UserService userService;
-    private TextView userId;
-    private TextView userName;
-    private TextView userUsername;
-    private TextView userEmail;
-    private TextView status;
+    private TextView appIdText;
+    private TextView userIdText;
+    private TextView userNameText;
+    private TextView userUsernameText;
+    private TextView userEmailText;
+    private TextView statusText;
     private Button getDataButton;
     private UserViewModel userViewModel;
 
+    @Inject @AppId
+    String appId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AndroidInjection.inject(this);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arch_components);
 
+        Log.d(TAG, "onCreate: injection (start)");
+        Log.d(TAG, "onCreate: appId: " + appId);
+        Log.d(TAG, "onCreate: injection (end)");
+
         userService = ServiceFactory.getUserService();
 
-        userId = findViewById(R.id.userId);
-        userName = findViewById(R.id.userName);
-        userUsername = findViewById(R.id.userUsername);
-        userEmail = findViewById(R.id.userEmail);
-        status = findViewById(R.id.status);
+        appIdText = findViewById(R.id.appIdText);
+        userIdText = findViewById(R.id.userIdText);
+        userNameText = findViewById(R.id.userNameText);
+        userUsernameText = findViewById(R.id.userUsernameText);
+        userEmailText = findViewById(R.id.userEmailText);
+        statusText = findViewById(R.id.statusText);
         getDataButton = findViewById(R.id.getDataButton);
+
+        appIdText.setText(appId);
 
         UserViewModel userViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
         userViewModel.getUser().observe(this, user -> {
-            userId.setText(user.id);
-            userName.setText(user.name);
-            userUsername.setText(user.username);
-            userEmail.setText(user.email);
+            userIdText.setText(user.id);
+            userNameText.setText(user.name);
+            userUsernameText.setText(user.username);
+            userEmailText.setText(user.email);
         });
         userViewModel.getStatus().observe(this, statusVal -> {
-            status.setText(statusVal);
+            statusText.setText(statusVal);
         });
 
         getDataButton.setOnClickListener(view -> {
@@ -66,7 +86,7 @@ public class ArchComponentsActivity extends AppCompatActivity {
                     User errorUser = new User("...", "...", "...", "...");
                     userViewModel.getUser().setValue(errorUser);
                     userViewModel.getStatus().setValue("Error getting data: " + t.getMessage());
-                    status.setText("Error getting data: " + t.getMessage());
+                    statusText.setText("Error getting data: " + t.getMessage());
                 }
             });
         });

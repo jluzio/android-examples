@@ -7,19 +7,39 @@
     tools:context="org.example.jluzio.playground.ui.samples.ArchComponentsActivity">
 
     <TextView
-        android:id="@+id/userIdLabel"
+        android:id="@+id/appIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:minWidth="64dp"
+        android:text="-appId-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/appIdLabel"
+        app:layout_constraintStart_toEndOf="@+id/appIdLabel" />
+
+    <TextView
+        android:id="@+id/appIdLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:minWidth="64dp"
-        android:text="Id:"
-        android:textAlignment="textEnd"
+        android:text="appId:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/userId"
+        android:id="@+id/userIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:minWidth="64dp"
+        android:text="Id:"
+        android:textAlignment="textEnd"
+        app:layout_constraintStart_toStartOf="@+id/appIdLabel"
+        app:layout_constraintTop_toBottomOf="@+id/appIdLabel" />
+
+    <TextView
+        android:id="@+id/userIdText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,13 +60,13 @@
         app:layout_constraintTop_toBottomOf="@+id/userIdLabel" />
 
     <TextView
-        android:id="@+id/userName"
+        android:id="@+id/userNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="64dp"
         android:text="-Name-"
         app:layout_constraintBaseline_toBaselineOf="@+id/userNameLabel"
-        app:layout_constraintStart_toStartOf="@+id/userId" />
+        app:layout_constraintStart_toStartOf="@+id/userIdText" />
 
     <TextView
         android:id="@+id/userUsernameLabel"
@@ -60,13 +80,13 @@
         app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
 
     <TextView
-        android:id="@+id/userUsername"
+        android:id="@+id/userUsernameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="64dp"
         android:text="-Username-"
         app:layout_constraintBaseline_toBaselineOf="@+id/userUsernameLabel"
-        app:layout_constraintStart_toStartOf="@+id/userName" />
+        app:layout_constraintStart_toStartOf="@+id/userNameText" />
 
     <TextView
         android:id="@+id/userEmailLabel"
@@ -80,13 +100,13 @@
         app:layout_constraintTop_toBottomOf="@+id/userUsernameLabel" />
 
     <TextView
-        android:id="@+id/userEmail"
+        android:id="@+id/userEmailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="64dp"
         android:text="-Email-"
         app:layout_constraintBaseline_toBaselineOf="@+id/userEmailLabel"
-        app:layout_constraintStart_toStartOf="@+id/userUsername" />
+        app:layout_constraintStart_toStartOf="@+id/userUsernameText" />
 
     <TextView
         android:id="@+id/statusLabel"
@@ -100,13 +120,13 @@
         app:layout_constraintTop_toBottomOf="@+id/userEmailLabel" />
 
     <TextView
-        android:id="@+id/status"
+        android:id="@+id/statusText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="64dp"
         android:text="---"
         app:layout_constraintBaseline_toBaselineOf="@+id/statusLabel"
-        app:layout_constraintStart_toStartOf="@+id/userEmail" />
+        app:layout_constraintStart_toStartOf="@+id/userEmailText" />
 
     <Button
         android:id="@+id/getDataButton"
