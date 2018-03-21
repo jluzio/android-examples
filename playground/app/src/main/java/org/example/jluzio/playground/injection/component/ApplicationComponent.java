@@ -1,7 +1,7 @@
 package org.example.jluzio.playground.injection.component;
 
 
-import org.example.jluzio.playground.Application;
+import org.example.jluzio.playground.PlaygroundApplication;
 import org.example.jluzio.playground.injection.module.ActivityModule;
 import org.example.jluzio.playground.injection.module.ApplicationModule;
 
@@ -13,5 +13,5 @@ import dagger.Component;
 
 @Component(modules = {ApplicationModule.class, ActivityModule.class})
 public interface ApplicationComponent {
-    void inject(Application application);
+    void inject(PlaygroundApplication application);
 }

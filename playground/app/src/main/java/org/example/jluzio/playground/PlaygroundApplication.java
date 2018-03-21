@@ -14,7 +14,7 @@ import dagger.android.HasActivityInjector;
  * Created by jluzio on 15/03/2018.
  */
 
-public class Application extends android.app.Application implements HasActivityInjector {
+public class PlaygroundApplication extends android.app.Application implements HasActivityInjector {
     @Inject
     DispatchingAndroidInjector<Activity> dispatchingActivityInjector;
 

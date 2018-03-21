@@ -1,6 +1,8 @@
 package org.example.jluzio.playground.ui.samples;
 
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,21 +10,28 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import org.example.jluzio.playground.R;
+import org.example.jluzio.playground.data.local.database.AppDatabase;
+import org.example.jluzio.playground.data.local.database.AppDatabaseManager;
 import org.example.jluzio.playground.data.remote.ServiceFactory;
 import org.example.jluzio.playground.data.remote.UserService;
 import org.example.jluzio.playground.data.remote.response.User;
 import org.example.jluzio.playground.data.viewModel.UserViewModel;
 import org.example.jluzio.playground.injection.AppId;
 
+import java.util.concurrent.Callable;
+
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
+import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ArchComponentsActivity extends AppCompatActivity {
     private static final String TAG = "ArchComponentsActivity";
+    private static final String SAVED_USER_ID = "saved-user";
 
     private UserService userService;
     private TextView appIdText;
@@ -32,7 +41,10 @@ public class ArchComponentsActivity extends AppCompatActivity {
     private TextView userEmailText;
     private TextView statusText;
     private Button getDataButton;
+    private Button saveDataButton;
+    private Button loadDataButton;
     private UserViewModel userViewModel;
+    private AppDatabase db;
 
     @Inject @AppId
     String appId;
@@ -48,6 +60,9 @@ public class ArchComponentsActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: appId: " + appId);
         Log.d(TAG, "onCreate: injection (end)");
 
+        db = AppDatabaseManager.getInstance(this);
+        Log.d(TAG, "onCreate: db: " + db);
+
         userService = ServiceFactory.getUserService();
 
         appIdText = findViewById(R.id.appIdText);
@@ -57,6 +72,8 @@ public class ArchComponentsActivity extends AppCompatActivity {
         userEmailText = findViewById(R.id.userEmailText);
         statusText = findViewById(R.id.statusText);
         getDataButton = findViewById(R.id.getDataButton);
+        saveDataButton = findViewById(R.id.saveDataButton);
+        loadDataButton = findViewById(R.id.loadDataButton);
 
         appIdText.setText(appId);
 
@@ -91,5 +108,87 @@ public class ArchComponentsActivity extends AppCompatActivity {
             });
         });
 
+        saveDataButton.setOnClickListener(view -> {
+            Observable
+                    .fromCallable(getSimpleCallable(this::saveData))
+                    .subscribeOn(Schedulers.io())
+                    .subscribe();
+        });
+
+
+        loadDataButton.setOnClickListener(view -> {
+            Observable
+                    .fromCallable(getSimpleCallable(this::loadData))
+                    .subscribeOn(Schedulers.io())
+                    .subscribe();
+        });
+
+//        loadDataButton.setOnClickListener(view -> {
+//            getSimpleTask(() -> {loadData();}).execute(this);
+//        });
+
     }
+
+    private void saveData() {
+        UserViewModel userViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
+        userViewModel.getStatus().postValue("Saving user...");
+
+        User formUser = userViewModel.getUser().getValue();
+
+        if (formUser != null) {
+            org.example.jluzio.playground.data.local.entity.User savedUser =
+                    new org.example.jluzio.playground.data.local.entity.User();
+            savedUser.setId(SAVED_USER_ID);
+            savedUser.setName(formUser.name);
+            savedUser.setUsername(formUser.username);
+            savedUser.setEmail(formUser.email);
+
+            db.getUserDao().insertAll(savedUser);
+        }
+
+        userViewModel.getStatus().postValue("Saved user");
+    }
+
+    private void loadData() {
+        UserViewModel userViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
+        userViewModel.getStatus().postValue("Loading user...");
+
+        org.example.jluzio.playground.data.local.entity.User savedUser = db.getUserDao().get(SAVED_USER_ID);
+        if (savedUser != null) {
+            User formUser = new User();
+            formUser.id = savedUser.getId();
+            formUser.name = savedUser.getName();
+            formUser.username = savedUser.getUsername();
+            formUser.email = savedUser.getEmail();
+
+            userViewModel.getUser().postValue(formUser);
+        }
+
+        userViewModel.getStatus().postValue("Loaded user");
+    }
+
+    private Callable<String> getSimpleCallable(Runnable runnable) {
+        return new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                runnable.run();
+                return "dummy-result";
+            }
+        };
+    }
+
+    private AsyncTask<Context, Void, Void> getSimpleTask(Runnable runnable) {
+        return new AsyncTask<Context, Void, Void>() {
+            @Override
+            protected Void doInBackground(Context... contexts) {
+//                for (Context context: contexts) {
+//                    runnable.run();
+//                }
+                runnable.run();
+
+                return null;
+            }
+        };
+    }
+
 }
