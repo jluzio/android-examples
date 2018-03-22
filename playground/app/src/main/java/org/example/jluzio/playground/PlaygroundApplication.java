@@ -2,7 +2,7 @@ package org.example.jluzio.playground;
 
 import android.app.Activity;
 
-import org.example.jluzio.playground.injection.component.DaggerApplicationComponent;
+import org.example.jluzio.playground.injection.component.DaggerAppComponent;
 
 import javax.inject.Inject;
 
@@ -21,7 +21,9 @@ public class PlaygroundApplication extends android.app.Application implements Ha
     @Override
     public void onCreate() {
         super.onCreate();
-        DaggerApplicationComponent.create()
+        DaggerAppComponent.builder()
+                .application(this)
+                .build()
                 .inject(this);
     }
 

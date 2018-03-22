@@ -10,9 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import org.example.jluzio.playground.R;
-import org.example.jluzio.playground.data.local.database.AppDatabase;
-import org.example.jluzio.playground.data.local.database.AppDatabaseManager;
-import org.example.jluzio.playground.data.remote.ServiceFactory;
+import org.example.jluzio.playground.data.local.dao.UserDao;
 import org.example.jluzio.playground.data.remote.UserService;
 import org.example.jluzio.playground.data.remote.response.User;
 import org.example.jluzio.playground.data.viewModel.UserViewModel;
@@ -33,7 +31,6 @@ public class ArchComponentsActivity extends AppCompatActivity {
     private static final String TAG = "ArchComponentsActivity";
     private static final String SAVED_USER_ID = "saved-user";
 
-    private UserService userService;
     private TextView appIdText;
     private TextView userIdText;
     private TextView userNameText;
@@ -44,10 +41,14 @@ public class ArchComponentsActivity extends AppCompatActivity {
     private Button saveDataButton;
     private Button loadDataButton;
     private UserViewModel userViewModel;
-    private AppDatabase db;
 
     @Inject @AppId
     String appId;
+
+    @Inject
+    UserDao userDao;
+    @Inject
+    UserService userService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,12 +59,11 @@ public class ArchComponentsActivity extends AppCompatActivity {
 
         Log.d(TAG, "onCreate: injection (start)");
         Log.d(TAG, "onCreate: appId: " + appId);
+        Log.d(TAG, "onCreate: userDao: " + userDao);
+        Log.d(TAG, "onCreate: userService: " + userService);
         Log.d(TAG, "onCreate: injection (end)");
 
-        db = AppDatabaseManager.getInstance(this);
-        Log.d(TAG, "onCreate: db: " + db);
-
-        userService = ServiceFactory.getUserService();
+//        userService = ServiceFactory.getUserService();
 
         appIdText = findViewById(R.id.appIdText);
         userIdText = findViewById(R.id.userIdText);
@@ -143,7 +143,7 @@ public class ArchComponentsActivity extends AppCompatActivity {
             savedUser.setUsername(formUser.username);
             savedUser.setEmail(formUser.email);
 
-            db.getUserDao().insertAll(savedUser);
+            userDao.insertAll(savedUser);
         }
 
         userViewModel.getStatus().postValue("Saved user");
@@ -153,7 +153,7 @@ public class ArchComponentsActivity extends AppCompatActivity {
         UserViewModel userViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
         userViewModel.getStatus().postValue("Loading user...");
 
-        org.example.jluzio.playground.data.local.entity.User savedUser = db.getUserDao().get(SAVED_USER_ID);
+        org.example.jluzio.playground.data.local.entity.User savedUser = userDao.get(SAVED_USER_ID);
         if (savedUser != null) {
             User formUser = new User();
             formUser.id = savedUser.getId();

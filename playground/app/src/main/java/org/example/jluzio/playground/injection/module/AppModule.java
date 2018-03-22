@@ -10,7 +10,7 @@ import dagger.Provides;
  */
 
 @Module
-public class ApplicationModule {
+public class AppModule {
 
     @Provides
     @AppId
