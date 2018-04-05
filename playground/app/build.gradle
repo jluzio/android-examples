@@ -87,6 +87,9 @@ dependencies {
     // converter-gson uses gson 2.7.0 (maybe use other version?)
     //implementation 'com.google.code.gson:gson:2.8.2'
 
+    implementation "org.apache.commons:commons-lang3:3.7"
+    implementation "org.apache.commons:commons-collections4:4.1"
+
     // Dependency Injection: Dagger
     implementation "com.google.dagger:dagger-android:2.15"
     // dagger-android-support: if you use the support libraries
