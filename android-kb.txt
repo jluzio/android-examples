@@ -21,6 +21,12 @@ https://github.com/googlesamples/android-architecture-components
 https://github.com/googlesamples/android-testing
 ...
 
+
+-- XML Parsing --
+https://developer.android.com/training/basics/network-ops/xml.html
+(JAXB alternatives)
+https://stackoverflow.com/questions/5461127/using-jaxb-with-google-android
+
 Resource  (R)
 - Id for views is local to the layout
 
