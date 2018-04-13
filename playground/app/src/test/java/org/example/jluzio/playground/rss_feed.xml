@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns:im="http://itunes.apple.com/rss" xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <id>http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml</id><title>iTunes Store: Top Songs</title><updated>2018-04-13T04:10:24-07:00</updated><link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=us&amp;id=1&amp;popId=1"/><link rel="self" href="http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml"/><icon>http://itunes.apple.com/favicon.ico</icon><author><name>iTunes Store</name><uri>http://www.apple.com/itunes/</uri></author><rights>Copyright 2008 Apple Inc.</rights>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1369377735">https://itunes.apple.com/us/album/cry-pretty/1369377492?i=1369377735&amp;uo=2</id>
+
+        <title>Cry Pretty - Carrie Underwood</title>
+
+
+
+        <im:name>Cry Pretty</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/cry-pretty/1369377492?i=1369377735&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="6" term="Country" scheme="https://itunes.apple.com/us/genre/music-country/id6?uo=2" label="Country"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/e3/65/42/e3654202-a521-22f6-36fb-9102205fdf0d/mzaf_406678533213818642.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/carrie-underwood/63399334?uo=2">Carrie Underwood</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/3b/2e/53/3b2e535c-4e89-f4a1-bd54-7e099249e0c3/00602567573333.rgb.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/3b/2e/53/3b2e535c-4e89-f4a1-bd54-7e099249e0c3/00602567573333.rgb.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/3b/2e/53/3b2e535c-4e89-f4a1-bd54-7e099249e0c3/00602567573333.rgb.jpg/170x170bb-85.png</im:image>
+
+        <rights>A Capitol Records Nashville Release; &#8471; 2018 UMG Recordings, Inc.</rights>
+
+        <im:releaseDate label="April 11, 2018">2018-04-11T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Cry Pretty - Single</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/cry-pretty-single/1369377492?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/cry-pretty/1369377492?i=1369377735&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Carrie Underwood - Cry Pretty  artwork&quot; src=&quot;https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/3b/2e/53/3b2e535c-4e89-f4a1-bd54-7e099249e0c3/00602567573333.rgb.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/cry-pretty/1369377492?i=1369377735&amp;uo=2&quot;&gt;Cry Pretty&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/cry-pretty-single/1369377492?uo=2&quot;&gt;Cry Pretty - Single&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/carrie-underwood/63399334?uo=2&quot;&gt;Carrie Underwood&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-country/id6?uo=2&quot;&gt;Country&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; April 11, 2018
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; A Capitol Records Nashville Release; ℗ 2018 UMG Recordings, Inc.&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1251713725">https://itunes.apple.com/us/album/meant-to-be/1251713683?i=1251713725&amp;uo=2</id>
+
+        <title>Meant to Be - Bebe Rexha &amp; Florida Georgia Line</title>
+
+
+
+        <im:name>Meant to Be</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/meant-to-be/1251713683?i=1251713725&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="14" term="Pop" scheme="https://itunes.apple.com/us/genre/music-pop/id14?uo=2" label="Pop"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/fa/7b/15/fa7b15d9-29e7-031e-1a3f-325a36ddeb52/mzaf_3867120395092237549.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/bebe-rexha/466059563?uo=2">Bebe Rexha &amp; Florida Georgia Line</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/4a/a1/37/4aa13719-baa1-57f1-cf05-88de49672b9a/093624910763.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/4a/a1/37/4aa13719-baa1-57f1-cf05-88de49672b9a/093624910763.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/4a/a1/37/4aa13719-baa1-57f1-cf05-88de49672b9a/093624910763.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2017 Warner Bros. Records Inc.</rights>
+
+        <im:releaseDate label="August 11, 2017">2017-08-11T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>All Your Fault, Pt. 2 - EP</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/all-your-fault-pt-2-ep/1251713683?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/meant-to-be/1251713683?i=1251713725&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Bebe Rexha &amp; Florida Georgia Line - Meant to Be  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/4a/a1/37/4aa13719-baa1-57f1-cf05-88de49672b9a/093624910763.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/meant-to-be/1251713683?i=1251713725&amp;uo=2&quot;&gt;Meant to Be&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/all-your-fault-pt-2-ep/1251713683?uo=2&quot;&gt;All Your Fault, Pt. 2 - EP&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/bebe-rexha/466059563?uo=2&quot;&gt;Bebe Rexha &amp;amp; Florida Georgia Line&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-pop/id14?uo=2&quot;&gt;Pop&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; August 11, 2017
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2017 Warner Bros. Records Inc.&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1349124529">https://itunes.apple.com/us/album/whatever-it-takes/1349124524?i=1349124529&amp;uo=2</id>
+
+        <title>Whatever It Takes - Imagine Dragons</title>
+
+
+
+        <im:name>Whatever It Takes</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/whatever-it-takes/1349124524?i=1349124529&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="20" term="Alternative" scheme="https://itunes.apple.com/us/genre/music-alternative/id20?uo=2" label="Alternative"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/dd/f7/52/ddf752e3-6c14-902b-e6bd-14f859ec01c4/mzaf_8368880928731998795.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/imagine-dragons/358714030?uo=2">Imagine Dragons</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/62/18/8f/62188fa5-bc96-b1fb-2453-c2b5c4aeb222/UMG_cvrart_00602567410966_01_RGB72_3000x3000_17UMGIM98210.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/62/18/8f/62188fa5-bc96-b1fb-2453-c2b5c4aeb222/UMG_cvrart_00602567410966_01_RGB72_3000x3000_17UMGIM98210.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/62/18/8f/62188fa5-bc96-b1fb-2453-c2b5c4aeb222/UMG_cvrart_00602567410966_01_RGB72_3000x3000_17UMGIM98210.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 KIDinaKORNER/Interscope Records</rights>
+
+        <im:releaseDate label="May 8, 2017">2017-05-08T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Evolve</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/evolve/1349124524?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/whatever-it-takes/1349124524?i=1349124529&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Imagine Dragons - Whatever It Takes  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/62/18/8f/62188fa5-bc96-b1fb-2453-c2b5c4aeb222/UMG_cvrart_00602567410966_01_RGB72_3000x3000_17UMGIM98210.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/whatever-it-takes/1349124524?i=1349124529&amp;uo=2&quot;&gt;Whatever It Takes&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/evolve/1349124524?uo=2&quot;&gt;Evolve&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/imagine-dragons/358714030?uo=2&quot;&gt;Imagine Dragons&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-alternative/id20?uo=2&quot;&gt;Alternative&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; May 8, 2017
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 KIDinaKORNER/Interscope Records&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1336756656">https://itunes.apple.com/us/album/the-middle/1336756176?i=1336756656&amp;uo=2</id>
+
+        <title>The Middle - Zedd, Maren Morris &amp; Grey</title>
+
+
+
+        <im:name>The Middle</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/the-middle/1336756176?i=1336756656&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="17" term="Dance" scheme="https://itunes.apple.com/us/genre/music-dance/id17?uo=2" label="Dance"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/69/cc/20/69cc20a8-cc45-8aa6-302f-d3dbe07704fe/mzaf_1908091116203160672.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/zedd/368433979?uo=2">Zedd, Maren Morris &amp; Grey</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/1f/dd/c2/1fddc2ed-06dc-58b6-f32e-078971a2b17a/UMG_cvrart_00602567380580_01_RGB72_3000x3000_18UMGIM02231.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/1f/dd/c2/1fddc2ed-06dc-58b6-f32e-078971a2b17a/UMG_cvrart_00602567380580_01_RGB72_3000x3000_18UMGIM02231.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/1f/dd/c2/1fddc2ed-06dc-58b6-f32e-078971a2b17a/UMG_cvrart_00602567380580_01_RGB72_3000x3000_18UMGIM02231.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 Interscope Records</rights>
+
+        <im:releaseDate label="January 23, 2018">2018-01-23T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>The Middle - Single</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/the-middle-single/1336756176?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/the-middle/1336756176?i=1336756656&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Zedd, Maren Morris &amp; Grey - The Middle  artwork&quot; src=&quot;https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/1f/dd/c2/1fddc2ed-06dc-58b6-f32e-078971a2b17a/UMG_cvrart_00602567380580_01_RGB72_3000x3000_18UMGIM02231.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/the-middle/1336756176?i=1336756656&amp;uo=2&quot;&gt;The Middle&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/the-middle-single/1336756176?uo=2&quot;&gt;The Middle - Single&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/zedd/368433979?uo=2&quot;&gt;Zedd, Maren Morris &amp;amp; Grey&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-dance/id17?uo=2&quot;&gt;Dance&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; January 23, 2018
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 Interscope Records&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1370174633">https://itunes.apple.com/us/album/let-me/1370174624?i=1370174633&amp;uo=2</id>
+
+        <title>Let Me - ZAYN</title>
+
+
+
+        <im:name>Let Me</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/let-me/1370174624?i=1370174633&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="14" term="Pop" scheme="https://itunes.apple.com/us/genre/music-pop/id14?uo=2" label="Pop"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/2b/39/42/2b3942cd-e4d8-0ed9-befb-86bdcaa66272/mzaf_3804833099285690621.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/zayn/973181994?uo=2">ZAYN</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/da/34/65/da3465a3-9753-5793-e519-989c5202282b/886447043202.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/da/34/65/da3465a3-9753-5793-e519-989c5202282b/886447043202.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/da/34/65/da3465a3-9753-5793-e519-989c5202282b/886447043202.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 RCA Records, a division of Sony Music Entertainment</rights>
+
+        <im:releaseDate label="April 12, 2018">2018-04-12T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Let Me - Single</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/let-me-single/1370174624?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/let-me/1370174624?i=1370174633&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;ZAYN - Let Me  artwork&quot; src=&quot;https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/da/34/65/da3465a3-9753-5793-e519-989c5202282b/886447043202.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/let-me/1370174624?i=1370174633&amp;uo=2&quot;&gt;Let Me&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/let-me-single/1370174624?uo=2&quot;&gt;Let Me - Single&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/zayn/973181994?uo=2&quot;&gt;ZAYN&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-pop/id14?uo=2&quot;&gt;Pop&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; April 12, 2018
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 RCA Records, a division of Sony Music Entertainment&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1370204600">https://itunes.apple.com/us/album/barbie-tingz/1370203547?i=1370204600&amp;uo=2</id>
+
+        <title>Barbie Tingz - Nicki Minaj</title>
+
+
+
+        <im:name>Barbie Tingz</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/barbie-tingz/1370203547?i=1370204600&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="18" term="Hip Hop/Rap" scheme="https://itunes.apple.com/us/genre/music-hip-hop-rap/id18?uo=2" label="Hip-Hop/Rap"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/c1/d7/65/c1d76516-ff14-bcee-cb95-b0442f3b06d8/mzaf_6426016665794059325.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/nicki-minaj/278464538?uo=2">Nicki Minaj</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/95/65/dd/9565dd42-53ee-04fc-002a-ef9acd66ba93/00602567628866.rgb.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/95/65/dd/9565dd42-53ee-04fc-002a-ef9acd66ba93/00602567628866.rgb.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/95/65/dd/9565dd42-53ee-04fc-002a-ef9acd66ba93/00602567628866.rgb.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 Young Money/Cash Money Records</rights>
+
+        <im:releaseDate label="April 12, 2018">2018-04-12T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Barbie Tingz - Single</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/barbie-tingz-single/1370203547?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/barbie-tingz/1370203547?i=1370204600&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Nicki Minaj - Barbie Tingz  artwork&quot; src=&quot;https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/95/65/dd/9565dd42-53ee-04fc-002a-ef9acd66ba93/00602567628866.rgb.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/barbie-tingz/1370203547?i=1370204600&amp;uo=2&quot;&gt;Barbie Tingz&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/barbie-tingz-single/1370203547?uo=2&quot;&gt;Barbie Tingz - Single&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/nicki-minaj/278464538?uo=2&quot;&gt;Nicki Minaj&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-hip-hop-rap/id18?uo=2&quot;&gt;Hip-Hop/Rap&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; April 12, 2018
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 Young Money/Cash Money Records&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1354570157">https://itunes.apple.com/us/album/you-make-it-easy/1354570152?i=1354570157&amp;uo=2</id>
+
+        <title>You Make It Easy - Jason Aldean</title>
+
+
+
+        <im:name>You Make It Easy</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/you-make-it-easy/1354570152?i=1354570157&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="6" term="Country" scheme="https://itunes.apple.com/us/genre/music-country/id6?uo=2" label="Country"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/bb/a3/9c/bba39c71-668c-6fce-a822-6d3d91af7d84/mzaf_8343445101757700881.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/jason-aldean/63684710?uo=2">Jason Aldean</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/97/87/8c/97878c51-f420-eb73-4f81-fdebf688c79c/4050538376074.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/97/87/8c/97878c51-f420-eb73-4f81-fdebf688c79c/4050538376074.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/97/87/8c/97878c51-f420-eb73-4f81-fdebf688c79c/4050538376074.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 Macon Music, LLC under exclusive license to Broken Bow Records</rights>
+
+        <im:releaseDate label="January 25, 2018">2018-01-25T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Rearview Town</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/rearview-town/1354570152?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/you-make-it-easy/1354570152?i=1354570157&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Jason Aldean - You Make It Easy  artwork&quot; src=&quot;https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/97/87/8c/97878c51-f420-eb73-4f81-fdebf688c79c/4050538376074.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/you-make-it-easy/1354570152?i=1354570157&amp;uo=2&quot;&gt;You Make It Easy&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/rearview-town/1354570152?uo=2&quot;&gt;Rearview Town&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/jason-aldean/63684710?uo=2&quot;&gt;Jason Aldean&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-country/id6?uo=2&quot;&gt;Country&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; January 25, 2018
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 Macon Music, LLC under exclusive license to Broken Bow Records&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1337765670">https://itunes.apple.com/us/album/zombie/1337765138?i=1337765670&amp;uo=2</id>
+
+        <title>Zombie - Bad Wolves</title>
+
+
+
+        <im:name>Zombie</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/zombie/1337765138?i=1337765670&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="20" term="Alternative" scheme="https://itunes.apple.com/us/genre/music-alternative/id20?uo=2" label="Alternative"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/a6/fd/c0/a6fdc05e-c57f-3908-66b9-11e6269ccc44/mzaf_4543106340638783549.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/bad-wolves/1005229146?uo=2">Bad Wolves</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/74/d9/c7/74d9c7c6-4948-dccb-0028-8a2bd75c5926/849320030102.png/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/74/d9/c7/74d9c7c6-4948-dccb-0028-8a2bd75c5926/849320030102.png/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/74/d9/c7/74d9c7c6-4948-dccb-0028-8a2bd75c5926/849320030102.png/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 Eleven Seven Music</rights>
+
+        <im:releaseDate label="January 19, 2018">2018-01-19T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Zombie - Single</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/zombie-single/1337765138?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/zombie/1337765138?i=1337765670&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Bad Wolves - Zombie  artwork&quot; src=&quot;https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/74/d9/c7/74d9c7c6-4948-dccb-0028-8a2bd75c5926/849320030102.png/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/zombie/1337765138?i=1337765670&amp;uo=2&quot;&gt;Zombie&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/zombie-single/1337765138?uo=2&quot;&gt;Zombie - Single&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/bad-wolves/1005229146?uo=2&quot;&gt;Bad Wolves&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-alternative/id20?uo=2&quot;&gt;Alternative&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; January 19, 2018
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 Eleven Seven Music&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1321217021">https://itunes.apple.com/us/album/never-be-the-same/1321216767?i=1321217021&amp;uo=2</id>
+
+        <title>Never Be the Same - Camila Cabello</title>
+
+
+
+        <im:name>Never Be the Same</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/never-be-the-same/1321216767?i=1321217021&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="14" term="Pop" scheme="https://itunes.apple.com/us/genre/music-pop/id14?uo=2" label="Pop"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/f0/da/81/f0da81c6-493c-81a5-8745-a3e74e5d7709/mzaf_2702473642476586293.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/camila-cabello/935727853?uo=2">Camila Cabello</im:artist>
+
+        <im:price amount="0.69000" currency="USD">$0.69</im:price>
+
+        <im:image height="55">https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/32/53/40/325340a2-c77e-777d-c391-64ed74434f2d/886446870298.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/32/53/40/325340a2-c77e-777d-c391-64ed74434f2d/886446870298.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/32/53/40/325340a2-c77e-777d-c391-64ed74434f2d/886446870298.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2018 Simco Ltd. under exclusive license to Epic Records, a division of Sony Music Entertainment</rights>
+
+        <im:releaseDate label="December 7, 2017">2017-12-07T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Camila</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/camila/1321216767?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/never-be-the-same/1321216767?i=1321217021&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Camila Cabello - Never Be the Same  artwork&quot; src=&quot;https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/32/53/40/325340a2-c77e-777d-c391-64ed74434f2d/886446870298.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/never-be-the-same/1321216767?i=1321217021&amp;uo=2&quot;&gt;Never Be the Same&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/camila/1321216767?uo=2&quot;&gt;Camila&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/camila-cabello/935727853?uo=2&quot;&gt;Camila Cabello&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-pop/id14?uo=2&quot;&gt;Pop&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $0.69
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; December 7, 2017
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2018 Simco Ltd. under exclusive license to Epic Records, a division of Sony Music Entertainment&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+    <entry>
+        <updated>2018-04-13T04:10:24-07:00</updated>
+
+        <id im:id="1277176588">https://itunes.apple.com/us/album/heaven/1277175594?i=1277176588&amp;uo=2</id>
+
+        <title>Heaven - Kane Brown</title>
+
+
+
+        <im:name>Heaven</im:name>
+
+        <link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/heaven/1277175594?i=1277176588&amp;uo=2"/>
+
+        <im:contentType term="Music" label="Music"><im:contentType term="Track" label="Track"/></im:contentType>
+
+        <category im:id="6" term="Country" scheme="https://itunes.apple.com/us/genre/music-country/id6?uo=2" label="Country"/>
+
+        <link title="Preview" rel="enclosure" type="audio/x-m4a" href="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/31/ad/26/31ad2686-10d7-eb1f-e744-3cbd871ec2a1/mzaf_1835808440537554511.plus.aac.p.m4a" im:assetType="preview"><im:duration>30000</im:duration></link>
+
+        <im:artist href="https://itunes.apple.com/us/artist/kane-brown/930928857?uo=2">Kane Brown</im:artist>
+
+        <im:price amount="1.29000" currency="USD">$1.29</im:price>
+
+        <im:image height="55">https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/54/d5/34/54d53483-528f-efeb-5a8a-2642a82f8b7f/886446714837.jpg/55x55bb-85.png</im:image>
+
+        <im:image height="60">https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/54/d5/34/54d53483-528f-efeb-5a8a-2642a82f8b7f/886446714837.jpg/60x60bb-85.png</im:image>
+
+        <im:image height="170">https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/54/d5/34/54d53483-528f-efeb-5a8a-2642a82f8b7f/886446714837.jpg/170x170bb-85.png</im:image>
+
+        <rights>&#8471; 2017 Sony Music Entertainment</rights>
+
+        <im:releaseDate label="October 6, 2017">2017-10-06T00:00:00-07:00</im:releaseDate>
+
+        <im:collection><im:name>Kane Brown (Deluxe Edition)</im:name><link rel="alternate" type="text/html" href="https://itunes.apple.com/us/album/kane-brown-deluxe-edition/1277175594?uo=2"/><im:contentType term="Music" label="Music"><im:contentType term="Album" label="Album"/></im:contentType></im:collection>
+
+
+        <content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+            &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+            &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+            &lt;a href=&quot;https://itunes.apple.com/us/album/heaven/1277175594?i=1277176588&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Kane Brown - Heaven  artwork&quot; src=&quot;https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/54/d5/34/54d53483-528f-efeb-5a8a-2642a82f8b7f/886446714837.jpg/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;http://r.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+            &lt;td width=&quot;95%&quot;&gt;
+
+
+            &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/us/album/heaven/1277175594?i=1277176588&amp;uo=2&quot;&gt;Heaven&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/album/kane-brown-deluxe-edition/1277175594?uo=2&quot;&gt;Kane Brown (Deluxe Edition)&lt;/a&gt;&lt;br/&gt;
+
+
+            &lt;a href=&quot;https://itunes.apple.com/us/artist/kane-brown/930928857?uo=2&quot;&gt;Kane Brown&lt;/a&gt;
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Genre:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/us/genre/music-country/id6?uo=2&quot;&gt;Country&lt;/a&gt;
+
+            &lt;br/&gt;
+            &lt;b&gt;Price:&lt;/b&gt; $1.29
+
+            &lt;br/&gt;
+            &lt;b&gt;Release Date:&lt;/b&gt; October 6, 2017
+
+            &lt;/font&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;
+
+
+
+            &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; ℗ 2017 Sony Music Entertainment&lt;/font&gt;
+
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+        </content>
+
+    </entry>
+
+</feed>

@@ -27,6 +27,11 @@ https://developer.android.com/training/basics/network-ops/xml.html
 (JAXB alternatives)
 https://stackoverflow.com/questions/5461127/using-jaxb-with-google-android
 
+Simple XML:
+http://simple.sourceforge.net/
+Gradle: implementation "org.simpleframework:simple-xml:2.7.1"
+
+
 Resource  (R)
 - Id for views is local to the layout
 
