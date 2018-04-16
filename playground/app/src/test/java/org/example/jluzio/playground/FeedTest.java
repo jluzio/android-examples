@@ -18,7 +18,7 @@ public class FeedTest {
     public void testRead() throws Exception {
         // http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml
         System.out.println("home: " + System.getProperty("user.home"));
-        URL resource = this.getClass().getClassLoader().getResource("org/example/jluzio/playground/rss_feed.xml");
+        URL resource = this.getClass().getClassLoader().getResource("rss_feed.xml");
 
         File source = new File(resource.getPath());
 
