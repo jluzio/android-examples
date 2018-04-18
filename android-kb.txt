@@ -6,6 +6,8 @@ gradle.properties
 Workaround for issues with Android Studio/Gradle not handling well restrictive proxies: try to use a network without proxy
 TODO: check alternative methods
 
+Gradle edit freeze: correct proxy in Android Studio & Gradle global config
+
 Global proxy
 C:\Users\jluzio\.gradle\gradle.properties
 

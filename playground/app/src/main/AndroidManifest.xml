@@ -5,8 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
         android:name=".PlaygroundApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -28,8 +28,8 @@
         <activity android:name=".ui.course.Challenge20171128x01Activity" />
         <activity android:name=".ui.course.ButtonCounterChallengeActivity" />
         <activity android:name=".ui.course.CalculatorActivity" />
-        <activity android:name=".ui.samples.ArchComponentsActivity"></activity>
-        
+        <activity android:name=".ui.samples.ArchComponentsActivity" />
+        <activity android:name=".ui.course.RssFeedActivity"></activity>
     </application>
 
 </manifest>
