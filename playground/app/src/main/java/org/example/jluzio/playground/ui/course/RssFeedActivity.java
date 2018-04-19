@@ -3,7 +3,9 @@ package org.example.jluzio.playground.ui.course;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,7 +15,6 @@ import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 
 import java.io.InputStream;
-import java.io.StringWriter;
 import java.net.URL;
 
 public class RssFeedActivity extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class RssFeedActivity extends AppCompatActivity {
     private DownloadData currentTask;
     private Button loadFeedBtn;
     private Button cancelLoadFeedBtn;
-    private TextView feedTextView;
+    private RecyclerView feedListView;
     private TextView statusTextView;
 
     @Override
@@ -33,11 +34,12 @@ public class RssFeedActivity extends AppCompatActivity {
 
         loadFeedBtn = findViewById(R.id.loadFeedBtn);
         cancelLoadFeedBtn = findViewById(R.id.cancelLoadFeedBtn);
-        feedTextView = findViewById(R.id.feedTextView);
+        //feedTextView = findViewById(R.id.feedTextView);
+        feedListView = findViewById(R.id.feedListView);
         statusTextView = findViewById(R.id.statusTextView);
 
         loadFeedBtn.setOnClickListener( view -> {
-            currentTask = new DownloadData(feedTextView, statusTextView);
+            currentTask = new DownloadData(feedListView, statusTextView);
             currentTask.execute(feedUrl);
         });
         cancelLoadFeedBtn.setOnClickListener( view -> {
@@ -47,32 +49,27 @@ public class RssFeedActivity extends AppCompatActivity {
         });
     }
 
-    private class DownloadData extends AsyncTask<String, Void, Void> {
-        private TextView output;
+    private class DownloadData extends AsyncTask<String, Void, Feed> {
+        private RecyclerView output;
         private TextView statusOutput;
 
-        public DownloadData(TextView output, TextView statusOutput) {
+        public DownloadData(RecyclerView output, TextView statusOutput) {
             this.output = output;
             this.statusOutput = statusOutput;
         }
 
         @Override
-        protected Void doInBackground(String... urls) {
+        protected Feed doInBackground(String... urls) {
             String urlSpec = urls[0];
             Log.d(TAG, "doInBackground: start");
+            Feed feed = null;
             try (InputStream dataInputStream = new URL(urlSpec).openStream()) {
                 Serializer serializer = new Persister();
-                Feed feed = serializer.read(Feed.class, dataInputStream);
-                Log.d(TAG, "doInBackground: loaded and parsed");
-
-                StringWriter outputWriter = new StringWriter();
-                serializer.write(feed, outputWriter);
-                output.setText(outputWriter.toString());
-                Log.d(TAG, "doInBackground: output finished");
+                feed = serializer.read(Feed.class, dataInputStream);
             } catch (Exception e) {
                 Log.e(TAG, "doInBackground: error", e);
             }
-            return null;
+            return feed;
         }
 
         @Override
@@ -83,17 +80,42 @@ public class RssFeedActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
+        protected void onPostExecute(Feed feed) {
+            super.onPostExecute(feed);
             Log.d(TAG, "onPostExecute: Task successful!");
+            //output.setAdapter(getListAdapter(feed));
             statusOutput.setText("Task successful!");
         }
 
         @Override
-        protected void onCancelled(Void aVoid) {
-            super.onCancelled(aVoid);
+        protected void onCancelled(Feed feed) {
+            super.onCancelled(feed);
             Log.d(TAG, "onCancelled: Task cancelled!");
             statusOutput.setText("Task cancelled!");
+        }
+    }
+
+    private class FeedAdapter extends RecyclerView.Adapter {
+        private Feed feed;
+
+        @Override
+        public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            // https://developer.android.com/guide/topics/ui/layout/recyclerview.html#java
+//            TextView v = LayoutInflater.from(parent.getContext())
+//                    .inflate(R.layout.rss_feed_entry, parent, false);
+
+            RecyclerView.ViewHolder vh = null;
+            return null;
+        }
+
+        @Override
+        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+
+        }
+
+        @Override
+        public int getItemCount() {
+            return feed.getEntries().size();
         }
     }
 }
