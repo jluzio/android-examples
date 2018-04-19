@@ -1,7 +1,9 @@
-package org.example.jluzio.playground;
+package org.example.jluzio.playground.ui.samples;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import org.example.jluzio.playground.R;
 
 public class SampleByScreenSizeActivity extends AppCompatActivity {
 

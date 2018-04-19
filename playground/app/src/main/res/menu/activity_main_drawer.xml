@@ -24,6 +24,18 @@
             android:id="@+id/nav_buttonCounterChallenge"
             android:icon="@drawable/ic_menu_manage"
             android:title="Button Counter Challenge" />
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Calculator" />
+        <item
+            android:id="@+id/nav_arch_components"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Arch Components" />
+        <item
+            android:id="@+id/nav_rss_feed"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Rss Feed" />
     </group>
 
     <item android:title="Other">

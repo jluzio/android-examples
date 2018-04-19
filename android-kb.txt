@@ -6,10 +6,59 @@ gradle.properties
 Workaround for issues with Android Studio/Gradle not handling well restrictive proxies: try to use a network without proxy
 TODO: check alternative methods
 
+Gradle edit freeze: correct proxy in Android Studio & Gradle global config
+
+Global proxy
+C:\Users\jluzio\.gradle\gradle.properties
+
 https://developer.android.com/topic/libraries/architecture/guide.html
 https://developer.android.com/guide/components/fragments.html
 https://source.android.com/setup/code-style
 https://developer.android.com/studio/write/java8-support.html
 
+-- Samples --
+https://github.com/googlesamples
+(filtered by 'android-'):  https://github.com/googlesamples?q=android-
+https://github.com/googlesamples/android-architecture-components
+https://github.com/googlesamples/android-testing
+...
+
+
+-- XML Parsing --
+https://developer.android.com/training/basics/network-ops/xml.html
+(JAXB alternatives)
+https://stackoverflow.com/questions/5461127/using-jaxb-with-google-android
+
+Simple XML:
+http://simple.sourceforge.net/
+Gradle: implementation "org.simpleframework:simple-xml:2.7.1"
+
+
 Resource  (R)
 - Id for views is local to the layout
+
+Save/Restore State:
+ - onSaveInstanceState/onRestoreInstanceState: recommended in documentation
+ - onPause/onResume: recommended in course. for persistent storage? maybe works in more scenarios (investigate)
+ 
+-- Android Blueprints --
+https://github.com/googlesamples/android-architecture/
+ 
+--- Libraries ---
+- Dagger (CDI)
+https://google.github.io/dagger
+https://google.github.io/dagger/android
+
+- Android architecture components
+ - LiveData (Data observers)
+ - Room (Database)
+ - ViewModel
+https://developer.android.com/topic/libraries/architecture/index.html
+https://developer.android.com/topic/libraries/architecture/adding-components.html
+
+ViewModels and LiveData Patterns/AntiPatterns
+https://medium.com/google-developers/viewmodels-and-livedata-patterns-antipatterns-21efaef74a54
+
+Project structure:
+https://overflow.buffer.com/2016/09/26/android-rethinking-package-structure/
+(TODO: see more options)

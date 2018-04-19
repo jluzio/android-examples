@@ -1,7 +1,9 @@
-package org.example.jluzio.playground;
+package org.example.jluzio.playground.ui.course;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import org.example.jluzio.playground.R;
 
 public class Challenge20171128x01Activity extends AppCompatActivity {
 

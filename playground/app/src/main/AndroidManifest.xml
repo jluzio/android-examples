@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.example.jluzio.playground">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".PlaygroundApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,11 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SampleActivity" />
-        <activity android:name=".SampleByScreenSizeActivity" />
-        <activity android:name=".Challenge20171127x01Activity" />
-        <activity android:name=".Challenge20171128x01Activity" />
-        <activity android:name=".ButtonCounterChallengeActivity"></activity>
+        <activity android:name=".ui.samples.SampleActivity" />
+        <activity android:name=".ui.samples.SampleByScreenSizeActivity" />
+        <activity android:name=".ui.course.Challenge20171127x01Activity" />
+        <activity android:name=".ui.course.Challenge20171128x01Activity" />
+        <activity android:name=".ui.course.ButtonCounterChallengeActivity" />
+        <activity android:name=".ui.course.CalculatorActivity" />
+        <activity android:name=".ui.samples.ArchComponentsActivity" />
+        <activity android:name=".ui.course.RssFeedActivity"></activity>
     </application>
 
 </manifest>
