@@ -3,14 +3,17 @@ package org.example.jluzio.playground.ui.course;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
 import org.example.jluzio.playground.R;
 import org.example.jluzio.playground.data.remote.response.Feed;
+import org.example.jluzio.playground.data.remote.response.FeedEntry;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 
@@ -34,9 +37,16 @@ public class RssFeedActivity extends AppCompatActivity {
 
         loadFeedBtn = findViewById(R.id.loadFeedBtn);
         cancelLoadFeedBtn = findViewById(R.id.cancelLoadFeedBtn);
-        //feedTextView = findViewById(R.id.feedTextView);
-        feedListView = findViewById(R.id.feedListView);
         statusTextView = findViewById(R.id.statusTextView);
+
+        feedListView = findViewById(R.id.feedListView);
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        feedListView.setHasFixedSize(true);
+        // use a linear layout manager
+        feedListView.setLayoutManager(new LinearLayoutManager(this));
+
+        feedListView.setAdapter(new FeedAdapter(null));
 
         loadFeedBtn.setOnClickListener( view -> {
             currentTask = new DownloadData(feedListView, statusTextView);
@@ -52,6 +62,7 @@ public class RssFeedActivity extends AppCompatActivity {
     private class DownloadData extends AsyncTask<String, Void, Feed> {
         private RecyclerView output;
         private TextView statusOutput;
+        private boolean replaceAdapter = false;
 
         public DownloadData(RecyclerView output, TextView statusOutput) {
             this.output = output;
@@ -83,7 +94,14 @@ public class RssFeedActivity extends AppCompatActivity {
         protected void onPostExecute(Feed feed) {
             super.onPostExecute(feed);
             Log.d(TAG, "onPostExecute: Task successful!");
-            //output.setAdapter(getListAdapter(feed));
+            if (replaceAdapter) {
+                output.setAdapter(new FeedAdapter(feed));
+                output.invalidate();
+            } else {
+                FeedAdapter feedAdapter = (FeedAdapter) output.getAdapter();
+                feedAdapter.feed = feed;
+                feedAdapter.notifyDataSetChanged();
+            }
             statusOutput.setText("Task successful!");
         }
 
@@ -95,27 +113,48 @@ public class RssFeedActivity extends AppCompatActivity {
         }
     }
 
-    private class FeedAdapter extends RecyclerView.Adapter {
+    public static class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedEntryViewHolder> {
         private Feed feed;
 
+        // Provide a reference to the views for each data item
+        // Complex data items may need more than one view per item, and
+        // you provide access to all the views for a data item in a view holder
+        public static class FeedEntryViewHolder extends RecyclerView.ViewHolder {
+            // each data item is just a string in this case
+            public TextView textView;
+            public FeedEntryViewHolder(TextView textView) {
+                super(textView);
+                this.textView = textView;
+            }
+        }
+
+        public FeedAdapter(Feed feed) {
+            this.feed = feed;
+        }
+
+        // Create new views (invoked by the layout manager)
         @Override
-        public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public FeedEntryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             // https://developer.android.com/guide/topics/ui/layout/recyclerview.html#java
-//            TextView v = LayoutInflater.from(parent.getContext())
-//                    .inflate(R.layout.rss_feed_entry, parent, false);
+            TextView textView = (TextView) LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.rss_feed_entry, parent, false);
 
-            RecyclerView.ViewHolder vh = null;
-            return null;
+            FeedEntryViewHolder viewHolder = new FeedEntryViewHolder(textView);
+            return viewHolder;
         }
 
+        // Replace the contents of a view (invoked by the layout manager)
         @Override
-        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
+        public void onBindViewHolder(FeedEntryViewHolder holder, int position) {
+            FeedEntry feedEntry = feed.getEntries().get(position);
+            String feedEntryLabel = String.format("%s | artist: %s | summary: %s", feedEntry.getName(), feedEntry.getArtist(), feedEntry.getSummary());
+            holder.textView.setText(feedEntryLabel);
         }
 
+        // Return the size of your dataset (invoked by the layout manager)
         @Override
         public int getItemCount() {
-            return feed.getEntries().size();
+            return feed == null ? 0 : feed.getEntries().size();
         }
     }
 }
