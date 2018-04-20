@@ -9,9 +9,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.common.base.MoreObjects;
+import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 
-import org.apache.commons.lang3.StringUtils;
 import org.example.jluzio.playground.R;
 import org.example.jluzio.playground.data.viewModel.CalculatorViewModel;
 
@@ -81,10 +81,10 @@ public class CalculatorActivity extends AppCompatActivity {
         String previousOperator = viewModel.getPreviousOperator().getValue();
         String actualOperator = "=".equals(operator) ? previousOperator : operator;
 
-        if (StringUtils.isEmpty(inputValueText))  {
+        if (Strings.isNullOrEmpty(inputValueText))  {
             viewModel.getInput().setValue("");
             return;
-        } else if (StringUtils.isEmpty(operator) || StringUtils.isEmpty(resultValueText)) {
+        } else if (Strings.isNullOrEmpty(operator) || Strings.isNullOrEmpty(resultValueText)) {
             viewModel.getResult().setValue(inputValueText);
             viewModel.getInput().setValue("");
             return;
