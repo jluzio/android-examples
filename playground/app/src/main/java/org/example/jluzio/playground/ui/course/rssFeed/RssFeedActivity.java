@@ -16,7 +16,7 @@ import org.example.jluzio.playground.data.cache.Caches;
 public class RssFeedActivity extends AppCompatActivity {
     private static final String TAG = "RssFeedActivity";
 
-    private String feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=100/xml";
+    private String feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml";
     private DownloadRssFeed currentTask;
     private Button loadFeedBtn;
     private Button cancelLoadFeedBtn;
