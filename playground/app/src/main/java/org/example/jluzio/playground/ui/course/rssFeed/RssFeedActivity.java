@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -14,9 +16,24 @@ import org.example.jluzio.playground.data.cache.Cache;
 import org.example.jluzio.playground.data.cache.Caches;
 
 public class RssFeedActivity extends AppCompatActivity {
-    private static final String TAG = "RssFeedActivity";
+    enum FeedId {
+        SONGS("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml"),
+        ALBUMS("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topalbums/limit=10/xml"),
+        APPS("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=10/xml");
 
-    private String feedUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=10/xml";
+        private final String feedUrl;
+
+        FeedId(String feedUrl) {
+            this.feedUrl = feedUrl;
+        }
+
+        public String getFeedUrl() {
+            return feedUrl;
+        }
+    }
+
+    private static final String TAG = "RssFeedActivity";
+    private FeedId currentFeedId = FeedId.SONGS;
     private DownloadRssFeed currentTask;
     private Button loadFeedBtn;
     private Button cancelLoadFeedBtn;
@@ -48,15 +65,46 @@ public class RssFeedActivity extends AppCompatActivity {
         feedListView.setAdapter(new FeedAdapter(null, imageCache));
 
         loadFeedBtn.setOnClickListener( view -> {
-            currentTask = new DownloadRssFeed(feedListView, statusTextView);
-            currentTask.execute(feedUrl);
+            loadFeed(currentFeedId);
         });
         cancelLoadFeedBtn.setOnClickListener( view -> {
-            if (currentTask != null && !currentTask.isCancelled()) {
-                currentTask.cancel(true);
-            }
+            cancelLoadFeed();
         });
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.feeds_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.songsFeedMenuItem:
+                currentFeedId = FeedId.SONGS;
+                break;
+            case R.id.albumsFeedMenuItem:
+                currentFeedId = FeedId.ALBUMS;
+                break;
+            case R.id.appsFeedMenuItem:
+                currentFeedId = FeedId.APPS;
+                break;
+        }
+        loadFeed(currentFeedId);
+        return true;
+    }
+
+    private void loadFeed(FeedId feedId) {
+        cancelLoadFeed();
+        currentTask = new DownloadRssFeed(feedListView, statusTextView);
+        currentTask.execute(feedId.getFeedUrl());
+    }
+
+    private void cancelLoadFeed() {
+        if (currentTask != null && !currentTask.isCancelled()) {
+            currentTask.cancel(true);
+        }
     }
 
 }
