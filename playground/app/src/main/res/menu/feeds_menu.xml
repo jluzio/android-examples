@@ -3,12 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/songsFeedMenuItem"
+        android:id="@+id/menu_songsFeed"
         android:title="Songs" />
     <item
-        android:id="@+id/albumsFeedMenuItem"
+        android:id="@+id/menu_albumsFeed"
         android:title="Albums" />
     <item
-        android:id="@+id/appsFeedMenuItem"
-        android:title="Apps" />
+        android:id="@+id/menu_appsFeed"
+        android:title="Apps" ></item>
+    <group
+        android:id="@+id/group_size"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_size_10"
+            android:title="Top 10" />
+        <item
+            android:id="@+id/menu_size_25"
+            android:title="Top 25" />
+    </group>
 </menu>
