@@ -1,7 +1,6 @@
 package org.example.jluzio.playground.ui.course.rssFeed;
 
 import android.arch.lifecycle.ViewModelProviders;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
@@ -14,8 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import org.example.jluzio.playground.R;
-import org.example.jluzio.playground.data.cache.Cache;
-import org.example.jluzio.playground.data.cache.Caches;
+import org.example.jluzio.playground.data.cache.HttpResponseCache;
 import org.example.jluzio.playground.data.viewModel.FeedId;
 import org.example.jluzio.playground.data.viewModel.RssFeedViewModel;
 
@@ -28,16 +26,15 @@ public class RssFeedActivity extends AppCompatActivity {
     private Button cancelLoadFeedBtn;
     private RecyclerView feedListView;
     private TextView statusTextView;
-    private Cache<String,Bitmap> imageCache;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rss_feed);
 
-        viewModel = ViewModelProviders.of(this).get(RssFeedViewModel.class);
+        HttpResponseCache.instance().enable(this);
 
-        imageCache = Caches.createMaxNumberItemsMemoryCache(20);
+        viewModel = ViewModelProviders.of(this).get(RssFeedViewModel.class);
 
         loadFeedBtn = findViewById(R.id.loadFeedBtn);
         cancelLoadFeedBtn = findViewById(R.id.cancelLoadFeedBtn);
@@ -53,16 +50,21 @@ public class RssFeedActivity extends AppCompatActivity {
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
         feedListView.addItemDecoration(itemDecoration);
 
-        feedListView.setAdapter(new FeedAdapter(null, imageCache));
+        feedListView.setAdapter(new FeedAdapter(null, viewModel.getImageCache()));
 
         statusTextView = findViewById(R.id.statusTextView);
 
         loadFeedBtn.setOnClickListener( view -> {
-            loadFeed(viewModel.getCurrentFeedId());
+            loadFeed(viewModel.getFeedId());
         });
         cancelLoadFeedBtn.setOnClickListener( view -> {
             cancelLoadFeed();
         });
+
+        // auto load if required (for example rotate screen)
+        if (viewModel.getFeedId() != null) {
+            loadCurrentFeed();
+        }
     }
 
     @Override
@@ -70,7 +72,7 @@ public class RssFeedActivity extends AppCompatActivity {
         Log.d(TAG, "onCreateOptionsMenu: creating...");
         getMenuInflater().inflate(R.menu.feeds_menu, menu);
         int maxItemsId;
-        if (viewModel.getFeedMaxItems() == 10) {
+        if (viewModel.getFeedLimit() == 10) {
             maxItemsId = R.id.menu_size_10;
         } else {
             maxItemsId = R.id.menu_size_25;
@@ -81,51 +83,66 @@ public class RssFeedActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        FeedId currentFeedId = null;
-        Integer limit = null;
+        FeedId feedId = null;
+        Integer feedLimit = null;
+        boolean changed = false;
+
         switch (item.getItemId()) {
             case R.id.menu_songsFeed:
-                currentFeedId = FeedId.SONGS;
+                feedId = FeedId.SONGS;
                 break;
             case R.id.menu_albumsFeed:
-                currentFeedId = FeedId.ALBUMS;
+                feedId = FeedId.ALBUMS;
                 break;
             case R.id.menu_appsFeed:
-                currentFeedId = FeedId.APPS;
+                feedId = FeedId.APPS;
                 break;
             case R.id.menu_size_10:
-                limit = 10;
+                feedLimit = 10;
                 if (!item.isChecked()) {
                     item.setChecked(true);
                 }
                 break;
             case R.id.menu_size_25:
-                limit = 25;
+                feedLimit = 25;
                 if (!item.isChecked()) {
                     item.setChecked(true);
                 }
                 break;
+            case R.id.menu_refresh:
+                changed = true;
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
-        if (currentFeedId != null) {
-            viewModel.setCurrentFeedId(currentFeedId);
-        } else if (limit != null) {
-            viewModel.setFeedMaxItems(limit);
+        if (feedId != null) {
+            changed = feedId != viewModel.getFeedId();
+            viewModel.setFeedId(feedId);
+        } else if (feedLimit != null) {
+            changed = feedLimit.intValue() != viewModel.getFeedLimit();
+            viewModel.setFeedLimit(feedLimit);
         }
-        loadCurrentFeed();
+
+        Log.d(TAG, String.format("onOptionsItemSelected: changed=%s | feedId=%s | feedLimit=%s | itemId=%s",
+                changed, feedId, feedLimit, item.getItemId()));
+
+        if (changed) {
+            loadCurrentFeed();
+        }
         return true;
     }
 
     private void loadCurrentFeed() {
-        loadFeed(viewModel.getCurrentFeedId());
+        loadFeed(viewModel.getFeedId());
     }
 
     private void loadFeed(FeedId feedId) {
         cancelLoadFeed();
-        Log.d(TAG, String.format("loadFeed: loading %s | %s", viewModel.getCurrentFeedId(), viewModel.getFeedMaxItems()));
-        currentTask = new DownloadRssFeed(feedListView, statusTextView);
-        currentTask.execute(feedId.getFeedUrl(viewModel.getFeedMaxItems()));
+        Log.d(TAG, String.format("loadFeed: loading %s | %s", viewModel.getFeedId(), viewModel.getFeedLimit()));
+        if (feedId != null) {
+            currentTask = new DownloadRssFeed(feedListView, statusTextView);
+            currentTask.execute(feedId.getFeedUrl(viewModel.getFeedLimit()));
+        }
     }
 
     private void cancelLoadFeed() {
