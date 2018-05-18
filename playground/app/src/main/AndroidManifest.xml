@@ -29,7 +29,8 @@
         <activity android:name=".ui.course.ButtonCounterChallengeActivity" />
         <activity android:name=".ui.course.CalculatorActivity" />
         <activity android:name=".ui.samples.ArchComponentsActivity" />
-        <activity android:name=".ui.course.rssFeed.RssFeedActivity"></activity>
+        <activity android:name=".ui.course.rssFeed.RssFeedActivity" />
+        <activity android:name=".ui.course.youtube.YoutubeActivity"></activity>
     </application>
 
 </manifest>

@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_sample"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Sample" />
-        <item
-            android:id="@+id/nav_sample_by_screen_size"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Sample by screen size" />
-        <item
-            android:id="@+id/nav_challenge20171127x01"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Challenge 20171127x01" />
-        <item
-            android:id="@+id/nav_challenge20171128x01"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Challenge 20171128x01" />
-        <item
-            android:id="@+id/nav_buttonCounterChallenge"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Button Counter Challenge" />
-        <item
-            android:id="@+id/nav_calculator"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Calculator" />
-        <item
-            android:id="@+id/nav_arch_components"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Arch Components" />
-        <item
-            android:id="@+id/nav_rss_feed"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Rss Feed" />
-    </group>
-
-    <item android:title="Other">
+    <item android:title="Course">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_youtube"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Youtube" />
+                <item
+                    android:id="@+id/nav_rss_feed"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Rss Feed" />
+                <item
+                    android:id="@+id/nav_calculator"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Calculator" />
+                <item
+                    android:id="@+id/nav_challenge20171127x01"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Challenge 20171127x01" />
+                <item
+                    android:id="@+id/nav_buttonCounterChallenge"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Button Counter Challenge" />
+                <item
+                    android:id="@+id/nav_challenge20171128x01"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Challenge 20171128x01" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Samples">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_arch_components"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Arch Components" />
+                <item
+                    android:id="@+id/nav_sample_by_screen_size"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Sample by screen size" />
+                <item
+                    android:id="@+id/nav_sample"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Sample" />
+            </group>
         </menu>
     </item>
 
