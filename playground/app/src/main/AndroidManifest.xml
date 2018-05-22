@@ -30,7 +30,7 @@
         <activity android:name=".ui.course.CalculatorActivity" />
         <activity android:name=".ui.samples.ArchComponentsActivity" />
         <activity android:name=".ui.course.rssFeed.RssFeedActivity" />
-        <activity android:name=".ui.course.youtube.YoutubeActivity"></activity>
+        <activity android:name=".ui.samples.youtube.PlayerViewDemoActivity"></activity>
     </application>
 
 </manifest>

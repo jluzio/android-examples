@@ -5,10 +5,6 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_youtube"
-                    android:icon="@drawable/ic_menu_manage"
-                    android:title="Youtube" />
-                <item
                     android:id="@+id/nav_rss_feed"
                     android:icon="@drawable/ic_menu_manage"
                     android:title="Rss Feed" />
@@ -36,6 +32,10 @@
     <item android:title="Samples">
         <menu>
             <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_youtube_demo"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="YouTube Demo" />
                 <item
                     android:id="@+id/nav_arch_components"
                     android:icon="@drawable/ic_menu_manage"
