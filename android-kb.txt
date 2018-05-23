@@ -35,6 +35,9 @@ https://github.com/googlesamples/android-architecture-components
 https://github.com/googlesamples/android-testing
 ...
 
+Sha1 for debug signature
+https://stackoverflow.com/questions/27609442/how-to-get-the-sha-1-fingerprint-certificate-in-android-studio-for-debug-mode
+Grade -> Root project -> Android / signingReport
 
 -- XML Parsing --
 https://developer.android.com/training/basics/network-ops/xml.html
