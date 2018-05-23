@@ -23,6 +23,11 @@ https://developer.android.com/guide/components/fragments.html
 https://source.android.com/setup/code-style
 https://developer.android.com/studio/write/java8-support.html
 
+Google API Keys
+https://console.cloud.google.com
+Best practices for securely using API keys
+https://support.google.com/cloud/answer/6310037
+
 -- Samples --
 https://github.com/googlesamples
 (filtered by 'android-'):  https://github.com/googlesamples?q=android-

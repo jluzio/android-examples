@@ -33,6 +33,11 @@ import org.example.jluzio.playground.ui.youtube.YouTubeFailureRecoveryActivity;
  * Note, to use a {@link YouTubePlayerView}, your activity must extend {@link YouTubeBaseActivity}.
  */
 public class PlayerViewDemoActivity extends YouTubeFailureRecoveryActivity {
+    interface Constants {
+        public static final String DEMO_VIDEO_ID = "wKJ9KzGQq0w";
+    }
+
+    private String videoId = Constants.DEMO_VIDEO_ID;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,7 +52,7 @@ public class PlayerViewDemoActivity extends YouTubeFailureRecoveryActivity {
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
                                         boolean wasRestored) {
         if (!wasRestored) {
-            player.cueVideo("wKJ9KzGQq0w");
+            player.cueVideo(videoId);
         }
     }
 
