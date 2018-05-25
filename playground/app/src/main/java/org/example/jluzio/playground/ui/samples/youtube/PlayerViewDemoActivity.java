@@ -16,7 +16,9 @@
 
 package org.example.jluzio.playground.ui.samples.youtube;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -44,13 +46,17 @@ public class PlayerViewDemoActivity extends YouTubeFailureRecoveryActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_view_demo);
 
-        YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
-        youTubeView.initialize(DeveloperKey.DEVELOPER_KEY, this);
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_view);
+        youTubePlayerView.initialize(DeveloperKey.DEVELOPER_KEY, this);
+
     }
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
-                                        boolean wasRestored) {
+                                        boolean wasRestored)
+    {
+        player.setPlaybackEventListener(playbackEventListener);
+        player.setPlayerStateChangeListener(playerStateChangeListener);
         if (!wasRestored) {
             player.cueVideo(videoId);
         }
@@ -60,5 +66,66 @@ public class PlayerViewDemoActivity extends YouTubeFailureRecoveryActivity {
     protected YouTubePlayer.Provider getYouTubePlayerProvider() {
         return (YouTubePlayerView) findViewById(R.id.youtube_view);
     }
+
+    private YouTubePlayer.PlaybackEventListener playbackEventListener = new YouTubePlayer.PlaybackEventListener() {
+        private Context context = PlayerViewDemoActivity.this;
+
+        @Override
+        public void onPlaying() {
+            Toast.makeText(context, "Playing", Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onPaused() {
+            Toast.makeText(context, "Paused", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onStopped() {
+            Toast.makeText(context, "Stopped", Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onBuffering(boolean isBuffering) {
+        }
+
+        @Override
+        public void onSeekTo(int newPositionMillis) {
+        }
+    };
+
+    private YouTubePlayer.PlayerStateChangeListener playerStateChangeListener = new YouTubePlayer.PlayerStateChangeListener() {
+        private Context context = PlayerViewDemoActivity.this;
+
+        @Override
+        public void onLoading() {
+//            Toast.makeText(context, "Loading", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onLoaded(String videoId) {
+            Toast.makeText(context, "Loaded", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onAdStarted() {
+
+        }
+
+        @Override
+        public void onVideoStarted() {
+            Toast.makeText(context, "Video Started", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onVideoEnded() {
+            Toast.makeText(context, "Video Ended", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onError(YouTubePlayer.ErrorReason errorReason) {
+
+        }
+    };
 
 }
