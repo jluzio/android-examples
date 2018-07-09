@@ -79,3 +79,8 @@ https://medium.com/google-developers/viewmodels-and-livedata-patterns-antipatter
 Project structure:
 https://overflow.buffer.com/2016/09/26/android-rethinking-package-structure/
 (TODO: see more options)
+
+Room:
+https://developer.android.com/topic/libraries/architecture/room
+DB Migration
+https://medium.com/google-developers/understanding-migrations-with-room-f01e04b07929
