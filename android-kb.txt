@@ -84,3 +84,8 @@ Room:
 https://developer.android.com/topic/libraries/architecture/room
 DB Migration
 https://medium.com/google-developers/understanding-migrations-with-room-f01e04b07929
+
+Naming conventions
+(not all are universally followed. I don't like m<var> for e.g.)
+https://source.android.com/setup/contribute/code-style#follow-field-naming-conventions
+https://stackoverflow.com/questions/12870537/android-naming-convention?rq=1
