@@ -9,4 +9,7 @@
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
     <string name="error_thumbnail_view">There was an error initializing the YouTubeThumbnailView (%1$s)</string>
     <string name="player_view_text">This is a YouTubePlayerView!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

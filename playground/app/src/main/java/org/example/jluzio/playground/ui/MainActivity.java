@@ -20,6 +20,7 @@ import org.example.jluzio.playground.ui.course.CalculatorActivity;
 import org.example.jluzio.playground.ui.course.Challenge20171127x01Activity;
 import org.example.jluzio.playground.ui.course.Challenge20171128x01Activity;
 import org.example.jluzio.playground.ui.course.rssFeed.RssFeedActivity;
+import org.example.jluzio.playground.ui.samples.SampleFragmentActivity;
 import org.example.jluzio.playground.ui.samples.youtube.PlayerViewDemoActivity;
 import org.example.jluzio.playground.ui.samples.ArchComponentsActivity;
 import org.example.jluzio.playground.ui.samples.SampleActivity;
@@ -131,6 +132,8 @@ public class MainActivity extends AppCompatActivity
             activityClass = RssFeedActivity.class;
         } else if (id == R.id.nav_youtube_demo) {
             activityClass = PlayerViewDemoActivity.class;
+        } else if (id == R.id.nav_fragments) {
+            activityClass = SampleFragmentActivity.class;
         }
         return activityClass;
     }
