@@ -21,14 +21,6 @@ public class SampleFragmentActivity extends AppCompatActivity implements SampleB
                 .replace(R.id.fragmentHeader, sampleHeaderFragment)
                 .replace(R.id.fragmentBody, sampleBodyFragment)
                 .commit();
-
-/*
-        Fragment fragmentHeader = getSupportFragmentManager().findFragmentById(R.id.fragmentHeader);
-        Fragment fragmentBody = getSupportFragmentManager().findFragmentById(R.id.fragmentBody);
-
-        fragmentHeader.setArguments(getParamBundle("nice title"));
-        fragmentBody.setArguments(getParamBundle("nice body"));
-*/
     }
 
     private Bundle getParamBundle(String textValue) {
