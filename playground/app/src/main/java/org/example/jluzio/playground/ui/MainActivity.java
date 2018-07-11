@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static final String INTENT_PARAM = "intent-param";
-    private MenuItemDef menuRoot = AppMenu.instance().getMenuRoot();
+    private MenuItemDef menuRoot = AppMenu.createMenu();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

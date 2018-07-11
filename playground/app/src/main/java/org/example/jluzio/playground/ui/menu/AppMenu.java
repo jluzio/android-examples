@@ -12,24 +12,19 @@ import org.example.jluzio.playground.ui.menu.simple.MenuItemDef;
 import org.example.jluzio.playground.ui.menu.simple.Menus;
 import org.example.jluzio.playground.ui.menu.simple.Sequence;
 import org.example.jluzio.playground.ui.samples.ArchComponentsActivity;
+import org.example.jluzio.playground.ui.samples.ConfigChangesActivity;
+import org.example.jluzio.playground.ui.samples.LifecycleComponentActivity;
+import org.example.jluzio.playground.ui.samples.ParentChildNavActivity;
 import org.example.jluzio.playground.ui.samples.ReceiveParamIntentActivity;
 import org.example.jluzio.playground.ui.samples.SampleActivity;
 import org.example.jluzio.playground.ui.samples.SampleByScreenSizeActivity;
 import org.example.jluzio.playground.ui.samples.SampleFragmentActivity;
+import org.example.jluzio.playground.ui.samples.WorkManagerActivity;
 import org.example.jluzio.playground.ui.samples.youtube.PlayerViewDemoActivity;
 
 public class AppMenu {
-    private static final AppMenu INSTANCE = new AppMenu();
-    private MenuItemDef menuRoot = createMenu();
 
-    public static AppMenu instance() {
-        return INSTANCE;
-    }
-
-    private AppMenu() {}
-
-
-    public MenuItemDef createMenu() {
+    public static MenuItemDef createMenu() {
         MenuDef courseMenuGroup = MenuDef.create("Course");
         courseMenuGroup
                 .add(MenuItemDef.create(Challenge20171127x01Activity.class))
@@ -47,6 +42,10 @@ public class AppMenu {
                 .add(MenuItemDef.create(ArchComponentsActivity.class))
                 .add(MenuItemDef.create(SampleFragmentActivity.class))
                 .add(MenuItemDef.create(ReceiveParamIntentActivity.class))
+                .add(MenuItemDef.create(ParentChildNavActivity.class))
+                .add(MenuItemDef.create(ConfigChangesActivity.class))
+                .add(MenuItemDef.create(LifecycleComponentActivity.class))
+                .add(MenuItemDef.create(WorkManagerActivity.class))
         ;
 
         MenuDef menuRoot = new MenuDef();
@@ -60,7 +59,4 @@ public class AppMenu {
         return menuRoot;
     }
 
-    public MenuItemDef getMenuRoot() {
-        return menuRoot;
-    }
 }

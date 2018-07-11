@@ -32,7 +32,15 @@
         <activity android:name=".ui.course.rssFeed.RssFeedActivity" />
         <activity android:name=".ui.samples.youtube.PlayerViewDemoActivity" />
         <activity android:name=".ui.samples.SampleFragmentActivity" />
-        <activity android:name=".ui.samples.ReceiveParamIntentActivity"></activity>
+        <activity android:name=".ui.samples.ReceiveParamIntentActivity" />
+        <activity
+            android:name=".ui.samples.ParentChildNavActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.samples.ConfigChangesActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".ui.samples.LifecycleComponentActivity" />
+        <activity android:name=".ui.samples.WorkManagerActivity"></activity>
     </application>
 
 </manifest>
