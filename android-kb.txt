@@ -2,8 +2,10 @@
 -- TODO --
 
 -- To Read --
-https://developer.android.com/training/efficient-downloads/redundant_redundant
+Google Developers Codelabs: provide a guided, tutorial, hands-on coding experience
+https://codelabs.developers.google.com/?cat=Android
 
+https://developer.android.com/training/efficient-downloads/redundant_redundant
 
 Supporting Multiple Screens
 https://developer.android.com/guide/practices/screens_support.html

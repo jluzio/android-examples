@@ -31,7 +31,8 @@
         <activity android:name=".ui.samples.ArchComponentsActivity" />
         <activity android:name=".ui.course.rssFeed.RssFeedActivity" />
         <activity android:name=".ui.samples.youtube.PlayerViewDemoActivity" />
-        <activity android:name=".ui.samples.SampleFragmentActivity"></activity>
+        <activity android:name=".ui.samples.SampleFragmentActivity" />
+        <activity android:name=".ui.samples.ReceiveParamIntentActivity"></activity>
     </application>
 
 </manifest>

@@ -15,19 +15,15 @@ import android.view.MenuItem;
 import android.view.View;
 
 import org.example.jluzio.playground.R;
-import org.example.jluzio.playground.ui.course.ButtonCounterChallengeActivity;
-import org.example.jluzio.playground.ui.course.CalculatorActivity;
-import org.example.jluzio.playground.ui.course.Challenge20171127x01Activity;
-import org.example.jluzio.playground.ui.course.Challenge20171128x01Activity;
-import org.example.jluzio.playground.ui.course.rssFeed.RssFeedActivity;
-import org.example.jluzio.playground.ui.samples.SampleFragmentActivity;
-import org.example.jluzio.playground.ui.samples.youtube.PlayerViewDemoActivity;
-import org.example.jluzio.playground.ui.samples.ArchComponentsActivity;
-import org.example.jluzio.playground.ui.samples.SampleActivity;
-import org.example.jluzio.playground.ui.samples.SampleByScreenSizeActivity;
+import org.example.jluzio.playground.ui.menu.AppMenu;
+import org.example.jluzio.playground.ui.menu.simple.MenuItemDef;
+import org.example.jluzio.playground.ui.menu.simple.Menus;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public static final String INTENT_PARAM = "intent-param";
+    private MenuItemDef menuRoot = AppMenu.instance().getMenuRoot();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +47,7 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
@@ -69,6 +65,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+        Menus.addToMenu(menu, menuRoot);
+
         return true;
     }
 
@@ -79,8 +78,15 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        MenuItemDef menuItem = Menus.findMenuItem(menuRoot, id);
+        if (menuItem != null) {
+            Class<?> activityClass = menuItem.getActivityClass();
+            if (activityClass != null) {
+                Intent intent = new Intent(this, activityClass);
+                intent.putExtra(INTENT_PARAM, String.format("Switching to %s", activityClass.getSimpleName()));
+                startActivity(intent);
+            }
+
             return true;
         }
 
@@ -93,47 +99,23 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
-        Class<?> targetViewClass = getActivityClassByNavigationItem(id);
-        if (targetViewClass != null) {
-            startActivity(new Intent(this, targetViewClass));
+        Class<?> activityClass = getActivityClassByNavigationItem(id);
+        if (activityClass != null) {
+            Intent intent = new Intent(this, activityClass);
+            intent.putExtra(INTENT_PARAM, String.format("Switching to %s", activityClass.getSimpleName()));
+            startActivity(intent);
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    public Object getActivityByNavigationItem(int id) {
-        try {
-            Class<?> activityClass = getActivityClassByNavigationItem(id);
-            return activityClass != null ? activityClass.newInstance() : null;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     public Class<?> getActivityClassByNavigationItem(int id) {
         Class<?> activityClass = null;
-        if (id == R.id.nav_sample) {
-            activityClass = SampleActivity.class;
-        } else if (id == R.id.nav_sample_by_screen_size) {
-            activityClass = SampleByScreenSizeActivity.class;
-        } else if (id == R.id.nav_challenge20171127x01) {
-            activityClass = Challenge20171127x01Activity.class;
-        } else if (id == R.id.nav_challenge20171128x01) {
-            activityClass = Challenge20171128x01Activity.class;
-        } else if (id == R.id.nav_buttonCounterChallenge) {
-            activityClass = ButtonCounterChallengeActivity.class;
-        } else if (id == R.id.nav_calculator) {
-            activityClass = CalculatorActivity.class;
-        } else if (id == R.id.nav_arch_components) {
-            activityClass = ArchComponentsActivity.class;
-        } else if (id == R.id.nav_rss_feed) {
-            activityClass = RssFeedActivity.class;
-        } else if (id == R.id.nav_youtube_demo) {
-            activityClass = PlayerViewDemoActivity.class;
-        } else if (id == R.id.nav_fragments) {
-            activityClass = SampleFragmentActivity.class;
+        if (id == R.id.nav_settings) {
+            //...
+            //activityClass = SampleFragmentActivity.class;
         }
         return activityClass;
     }
