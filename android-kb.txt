@@ -4,6 +4,9 @@
 -- To Read --
 Google Developers Codelabs: provide a guided, tutorial, hands-on coding experience
 https://codelabs.developers.google.com/?cat=Android
+Courses:
+https://codelabs.developers.google.com/kotlin-bootcamp/
+https://codelabs.developers.google.com/android-kotlin-fundamentals/
 
 https://developer.android.com/training/efficient-downloads/redundant_redundant
 
