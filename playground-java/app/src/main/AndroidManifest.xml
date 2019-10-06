@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.example.jluzio.playground">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".PlaygroundApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.samples.SampleActivity" />
+        <activity android:name=".ui.samples.SampleByScreenSizeActivity" />
+        <activity android:name=".ui.course.Challenge20171127x01Activity" />
+        <activity android:name=".ui.course.Challenge20171128x01Activity" />
+        <activity android:name=".ui.course.ButtonCounterChallengeActivity" />
+        <activity android:name=".ui.course.CalculatorActivity" />
+        <activity android:name=".ui.samples.ArchComponentsActivity" />
+        <activity android:name=".ui.course.rssFeed.RssFeedActivity" />
+        <activity android:name=".ui.samples.youtube.PlayerViewDemoActivity" />
+        <activity android:name=".ui.samples.SampleFragmentActivity" />
+        <activity android:name=".ui.samples.ReceiveParamIntentActivity" />
+        <activity
+            android:name=".ui.samples.ParentChildNavActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.samples.ConfigChangesActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".ui.samples.LifecycleComponentActivity" />
+        <activity android:name=".ui.samples.WorkManagerActivity"></activity>
+    </application>
+
+</manifest>
